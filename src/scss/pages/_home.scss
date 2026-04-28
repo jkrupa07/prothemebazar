@@ -1,0 +1,58 @@
+.hero-section {
+    height: 800px;
+
+    .hero-layer {
+        height: 320px;
+        top: 30px;
+        background: linear-gradient(180deg, rgba(255, 90, 41, 100), rgba(255, 90, 41, 0));
+    }
+}
+
+.marquree-slider-section {
+    .marquree-img {
+        width: 24px;
+    }
+}
+
+.layer-section {
+    .layer-wrapper {
+        .layer-count-bg {
+            min-height: 50px;
+            min-width: 50px;
+        }
+    }
+
+    .layer-arrow {
+        height: 70px;
+    }
+}
+
+.layer-count-bg::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 55%);
+    width: 15px;
+    height: 70px;
+    background: url("/public/assets/images/black-arrow.svg") center / contain no-repeat;
+}
+
+.layer-wrapper:not(:has(+ .layer-wrapper)) .layer-count-bg::before {
+    display: none;
+}
+
+.testimonial-section {
+    .slider-content {
+        .animal-img {
+            height: 305px;
+            top: 5px;
+        }
+    }
+}
+
+.banner-section {
+    .banner-img {
+        width: 395px;
+    }
+}

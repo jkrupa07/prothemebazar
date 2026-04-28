@@ -1,0 +1,23 @@
+.header {
+    z-index: 9999;
+
+    .header-logo {
+        height: 100px;
+    }
+
+    .header-menu li:first-child {
+        margin-left: 0px !important;
+    }
+
+    .header-menu li:last-child {
+        margin-right: 0px !important;
+    }
+
+    .cart-icon {
+        height: 20px !important;
+    }
+
+    .user-icon {
+        height: 30px !important;
+    }
+}

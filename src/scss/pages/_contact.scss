@@ -1,0 +1,66 @@
+body{
+    background-color: $color-6EC4CC;
+}
+
+.contact-section{
+    .layer-image{
+        width: 292px;
+        height: 280px;
+    }
+    .left-text{
+        color: rgba($color: $white, $alpha: 0.5);
+    }
+    .contact-icon{
+        &:last-child{
+            margin-right: 0 !important;
+        }   
+    }
+    .contact-box{
+        border: 2px solid $color-000000;    
+    }
+
+    .contact-form{
+        position: relative;
+        border: 2px solid $black;
+        max-width: 674px;
+        height: 880px;
+        .layer-image{
+            width: 292px;
+            height: 280px;
+        }
+        .input{
+            border: 1px solid $color-C9C9C9;
+            height: 59px;
+
+          
+
+            &::placeholder{
+               color: $black !important;
+               padding: 0 15px; 
+            }
+        }
+        .textarea{
+           border: 1px solid $color-C9C9C9;
+            
+            &::placeholder{
+               color: $black !important; 
+               padding: 0 15px; 
+            }
+        }
+
+    }
+}
+
+.two-card-section{
+    .card-wrapper{
+        position: absolute;
+        top: 0;
+        left: 315px;
+    }
+    .img-cover{
+        width: 330px;
+        height: 185px;
+    }
+}
+
+  

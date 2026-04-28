@@ -1,0 +1,39 @@
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+.btnA {
+    height: 57px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &.bg-03193f-btn {
+        background-color: transparent;
+        color: $color-03193f;
+        border: 2px solid $color-03193f;
+
+        &:hover {
+            background-color: $color-03193f;
+            color: $white;
+        }
+    }
+}
+
+.header-btn {
+    &.bg-03193f-btn {
+        a {
+            color: $color-03193f;
+        }
+
+        &:hover {
+            a {
+                color: $white;
+            }
+        }
+    }
+}
