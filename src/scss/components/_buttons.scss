@@ -8,9 +8,10 @@ button,
 }
 
 .btnA {
-    height: 57px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 56px;
+    padding-left: 25px;
+    padding-right: 25px;
+
 
     &.bg-03193f-btn {
         background-color: transparent;
@@ -20,6 +21,16 @@ button,
         &:hover {
             background-color: $color-03193f;
             color: $white;
+        }
+    }
+        &.bg-FF416C-btn {
+        background-color: $color-FF416C;
+        color: $white;
+        border: 2px solid $color-FF416C;
+
+        &:hover {
+            background-color: $white;
+            color: $color-FF416C;
         }
     }
 }

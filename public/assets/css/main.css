@@ -17794,9 +17794,9 @@ button,
 }
 
 .btnA {
-  height: 57px;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 56px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .btnA.bg-03193f-btn {
   background-color: transparent;
@@ -17806,6 +17806,15 @@ button,
 .btnA.bg-03193f-btn:hover {
   background-color: #03193f;
   color: #fff;
+}
+.btnA.bg-FF416C-btn {
+  background-color: #FF416C;
+  color: #fff;
+  border: 2px solid #FF416C;
+}
+.btnA.bg-FF416C-btn:hover {
+  background-color: #fff;
+  color: #FF416C;
 }
 
 .header-btn.bg-03193f-btn a {
@@ -17915,6 +17924,20 @@ button,
 }
 .hero-section .language-icon {
   height: 60px;
+}
+
+.search-box {
+  height: 62px;
+  padding: 5px;
+  border: 1px solid #848484;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.078);
+}
+
+/* Dropdown */
+/* Input */
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

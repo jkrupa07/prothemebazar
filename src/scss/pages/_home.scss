@@ -67,3 +67,24 @@
         height: 60px ;    
     }
 }
+
+
+
+.search-box { 
+  height: 62px;
+  padding: 5px;
+  border: 1px solid $color-848484;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.078);
+  
+}
+
+/* Dropdown */
+.category-select {
+}
+
+/* Input */
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+}
+
