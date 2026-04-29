@@ -17491,13 +17491,23 @@ textarea {
   padding-left: 0px;
   padding-right: 0px;
 }
-.row.row10 {
+
+.row10 {
   margin-right: -10px;
   margin-left: -10px;
 }
-.row.row10 > * {
+.row10 > * {
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.row15 {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row15 > * {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .w-fit {
@@ -17758,6 +17768,22 @@ textarea {
   line-height: 112px;
 }
 
+.radius16 {
+  border-radius: 16px;
+}
+
+.radius8 {
+  border-radius: 8px;
+}
+
+.radius12 {
+  border-radius: 12px;
+}
+
+.radius24 {
+  border-radius: 24px;
+}
+
 button,
 [type=button],
 [type=reset],
@@ -17879,6 +17905,16 @@ button,
 
 .banner-section .banner-img {
   width: 395px;
+}
+
+.hero-section {
+  height: 850px;
+}
+.hero-section .icon-wrapper {
+  box-shadow: 0px 10px 30px rgba(97, 105, 140, 0.2);
+}
+.hero-section .language-icon {
+  height: 60px;
 }
 
 /*# sourceMappingURL=main.css.map */
