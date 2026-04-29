@@ -1,90 +1,22 @@
+
 .hero-section {
-    height: 800px;
+  height: 850px;
+  .icon-wrapper {
+    box-shadow: 0px 10px 30px rgba(97, 105, 140, 0.2);
+  }
+  .language-icon {
+    height: 60px;
+  }
+  .search-box {
+    height: 62px;
+    padding: 5px;
+    border: 1px solid $color-848484;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.078);
 
-    .hero-layer {
-        height: 320px;
-        top: 30px;
-        background: linear-gradient(180deg, rgba(255, 90, 41, 100), rgba(255, 90, 41, 0));
+    .search-input {
+      flex: 1;
+      padding: 10px 15px;
     }
-}
-
-.marquree-slider-section {
-    .marquree-img {
-        width: 24px;
-    }
-}
-
-.layer-section {
-    .layer-wrapper {
-        .layer-count-bg {
-            min-height: 50px;
-            min-width: 50px;
-        }
-    }
-
-    .layer-arrow {
-        height: 70px;
-    }
-}
-
-.layer-count-bg::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 55%);
-    width: 15px;
-    height: 70px;
-    background: url("/public/assets/images/black-arrow.svg") center / contain no-repeat;
-}
-
-.layer-wrapper:not(:has(+ .layer-wrapper)) .layer-count-bg::before {
-    display: none;
-}
-
-.testimonial-section {
-    .slider-content {
-        .animal-img {
-            height: 305px;
-            top: 5px;
-        }
-    }
-}
-
-.banner-section {
-    .banner-img {
-        width: 395px;
-    }
-}
-
-
-.hero-section{
-    height: 850px;
-    .icon-wrapper{
-        box-shadow: 0px 10px 30px rgba(97, 105, 140, 0.2);
-    }
-    .language-icon{
-        height: 60px ;    
-    }
-}
-
-
-
-.search-box { 
-  height: 62px;
-  padding: 5px;
-  border: 1px solid $color-848484;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.078);
-  
-}
-
-/* Dropdown */
-.category-select {
-}
-
-/* Input */
-.search-input {
-  flex: 1;
-  padding: 10px 15px;
+  }
 }
 
