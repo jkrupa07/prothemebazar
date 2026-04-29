@@ -1,7 +1,7 @@
 .container {
   max-width: 1440px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
 
   @include media-breakpoint-down(lg) {
     padding-left: 22px;
@@ -29,7 +29,7 @@
 }
 .row15 {
   margin-right: -15px;
-  margin-left: -15px;
+  margin-left: -15px; 
 
   & > * {
     padding-right: 15px;

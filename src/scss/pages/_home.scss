@@ -1,4 +1,3 @@
-
 .hero-section {
   height: 850px;
   .icon-wrapper {
@@ -20,3 +19,23 @@
   }
 }
 
+.icon-card {
+  .chooes-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(180deg, $color-00aeef, $color-0f5ec9) !important;
+     
+    .choose-img {
+      height: 40px;
+    }
+  }
+
+  .bg-gradiant {
+    background-color: rgba(0, 130, 255, 0.06);
+  }
+}
+
+
+.banner-section{
+    background: linear-gradient(90deg, #FF4B6E 0%, #FF3D2E 100%);
+}

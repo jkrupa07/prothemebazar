@@ -17487,8 +17487,8 @@ textarea {
 }
 .container {
   max-width: 1440px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 @media (max-width: 991.98px) {
   .container {
@@ -17606,6 +17606,10 @@ textarea {
   background-color: #848484;
 }
 
+.bg-707DAC {
+  background-color: #707DAC;
+}
+
 .bg-FF416C {
   background-color: #FF416C;
 }
@@ -17628,6 +17632,10 @@ textarea {
 
 .text-848484 {
   color: #848484;
+}
+
+.text-707DAC {
+  color: #707DAC;
 }
 
 .text-FF416C {
@@ -17834,11 +17842,19 @@ button,
   background-color: #fff;
   color: #FF416C;
 }
-
-.header-btn.bg-03193f-btn a {
+.btnA.bg-FF416C-border-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btnA.bg-FF416C-border-btn:hover {
+  background-color: #fff;
+  color: #FF416C;
+}
+.btnA .header-btn.bg-03193f-btn a {
   color: #03193f;
 }
-.header-btn.bg-03193f-btn:hover a {
+.btnA .header-btn.bg-03193f-btn:hover a {
   color: #fff;
 }
 
@@ -17907,6 +17923,22 @@ button,
 .hero-section .search-box .search-input {
   flex: 1;
   padding: 10px 15px;
+}
+
+.icon-card .chooes-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(180deg, #00aeef, #0f5ec9) !important;
+}
+.icon-card .chooes-icon .choose-img {
+  height: 40px;
+}
+.icon-card .bg-gradiant {
+  background-color: rgba(0, 130, 255, 0.06);
+}
+
+.banner-section {
+  background: linear-gradient(90deg, #FF4B6E 0%, #FF3D2E 100%);
 }
 
 .about-us-section .about-us-img {

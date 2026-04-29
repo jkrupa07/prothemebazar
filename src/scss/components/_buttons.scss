@@ -1,50 +1,62 @@
 button,
-[type=button],
-[type=reset],
-[type=submit] {
-    appearance: none !important;
-    -moz-appearance: none !important;
-    -webkit-appearance: none !important;
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
 }
 
 .btnA {
-    height: 56px;
-    padding-left: 25px;
-    padding-right: 25px;
+  height: 56px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  &.bg-03193f-btn {
+    background-color: transparent;
+    color: $color-03193f;
+    border: 2px solid $color-03193f;
+
+    &:hover {
+      background-color: $color-03193f;
+      color: $white;
+    }
+  }
+  &.bg-FF416C-btn {
+    background-color: $color-FF416C;
+    color: $white;
+    border: 2px solid $color-FF416C;
+
+    &:hover {
+      background-color: $white;
+      color: $color-FF416C;
+    }
+  }
+
+   &.bg-FF416C-border-btn {
+      background-color: transparent;
+      color: $white;
+      border: 2px solid $white;
+
+      &:hover {
+        background-color: $white;
+        color: $color-FF416C;
+      }
+    }
 
 
+
+  .header-btn {
     &.bg-03193f-btn {
-        background-color: transparent;
+      a {
         color: $color-03193f;
-        border: 2px solid $color-03193f;
+      }
 
-        &:hover {
-            background-color: $color-03193f;
-            color: $white;
-        }
-    }
-        &.bg-FF416C-btn {
-        background-color: $color-FF416C;
-        color: $white;
-        border: 2px solid $color-FF416C;
-
-        &:hover {
-            background-color: $white;
-            color: $color-FF416C;
-        }
-    }
-}
-
-.header-btn {
-    &.bg-03193f-btn {
+      &:hover {
         a {
-            color: $color-03193f;
+          color: $white;
         }
-
-        &:hover {
-            a {
-                color: $white;
-            }
-        }
+      }
     }
+  }
 }
