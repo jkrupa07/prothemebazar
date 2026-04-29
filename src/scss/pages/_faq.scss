@@ -1,0 +1,22 @@
+.faq-section {
+  .plus-icon {
+    height: 15px;
+  }
+  .faq-question.active .plus-icon {
+    transform: rotate(45deg);
+  }
+  .faq-item {
+    border: 1px solid $color-848484;
+  }
+  .faq-question {
+    padding: 18px 20px;
+  }
+  .faq-question:hover {
+    background: $color-fafafa;
+  }
+  .faq-answer {
+    display: none;
+    padding: 15px 20px;
+    border-top: 1px solid $color-eeeeee;
+  }
+}
