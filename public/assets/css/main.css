@@ -14426,19 +14426,19 @@ progress {
 }
 @font-face {
   font-family: "rubik-bold";
-  src: url("../../../public/assets/fonts/rubik-regular.ttf") format(truetype);
+  src: url("../../../public/assets/fonts/rubik-bold.ttf") format(truetype);
 }
 @font-face {
   font-family: "rubik-extrabold";
-  src: url("../../../public/assets/fonts/rubik-regular.ttf") format(truetype);
+  src: url("../../../public/assets/fonts/rubik-extrabold.ttf") format(truetype);
 }
 @font-face {
   font-family: "rubik-medium";
-  src: url("../../../public/assets/fonts/rubik-regular.ttf") format(truetype);
+  src: url("../../../public/assets/fonts/rubik-medium.ttf") format(truetype);
 }
 @font-face {
   font-family: "rubik-light";
-  src: url("../../../public/assets/fonts/rubik-regular.ttf") format(truetype);
+  src: url("../../../public/assets/fonts/rubik-light.ttf") format(truetype);
 }
 .rubik {
   font-family: "rubik-regular";
@@ -14449,7 +14449,7 @@ progress {
 }
 
 .rubik-extrabold {
-  font-family: "rubik-extrabold ";
+  font-family: "rubik-extrabold";
 }
 
 .rubik-medium {
