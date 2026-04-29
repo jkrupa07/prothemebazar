@@ -4,55 +4,51 @@
 //     font-style: normal;
 // }
 @font-face {
-    font-family: "inter-italic";
-    src: url("../../../public/assets/fonts/inter-italic.ttf");
+    font-family: "rubik-regular";
+    src: url("../../../public/assets/fonts/rubik-regular.ttf") format(truetype);
+
 }
 
 @font-face {
-    font-family: "inter-medium";
-    src: url("../../../public/assets/fonts/inter-medium.ttf");
+    font-family: "rubik-bold";
+    src: url("../../../public/assets/fonts/rubik-regular.ttf") format(truetype);
+
 }
 
 @font-face {
-    font-family: "inter-regular";
-    src: url("../../../public/assets/fonts/inter-regular.ttf");
+    font-family: "rubik-extrabold";
+    src: url("../../../public/assets/fonts/rubik-regular.ttf") format(truetype);
+
 }
 
 @font-face {
-    font-family: "inter-semibold";
-    src: url("../../../public/assets/fonts/inter-semibold.ttf");
+    font-family: "rubik-medium";
+    src: url("../../../public/assets/fonts/rubik-regular.ttf") format(truetype);
+
 }
 
 @font-face {
-    font-family: "league-gothic-regular";
-    src: url("../../../public/assets/fonts/league-gothic-regular.ttf");
+    font-family: "rubik-light";
+    src: url("../../../public/assets/fonts/rubik-regular.ttf") format(truetype);
+
 }
 
-@font-face {
-    font-family: "helvetica-regular";
-    src: url("../../../public/assets/fonts/helvetica-regular.otf");
+.rubik {
+    font-family: "rubik-regular";
 }
 
-.inter-italic {
-    font-family: "inter-italic";
+.rubik-bold {
+    font-family: "rubik-bold";
 }
 
-.inter-medium {
-    font-family: "inter-medium";
+.rubik-extrabold {
+    font-family: "rubik-extrabold ";
 }
 
-.inter-regular {
-    font-family: "inter-regular";
+.rubik-medium {
+    font-family: "rubik-medium";
 }
 
-.inter-semibold {
-    font-family: "inter-semibold";
-}
-
-.gothic-regular {
-    font-family: "league-gothic-regular";
-}
-
-.helve-regular {
-    font-family: "helvetica-regular";
+.rubik-light {
+    font-family: "rubik-light";
 }
