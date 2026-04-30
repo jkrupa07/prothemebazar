@@ -1,0 +1,7 @@
+.gradient-label {
+    background: linear-gradient(to right, #FF416C, #FF4B2B);
+
+    &.radius-corner {
+        border-top-right-radius: 30px;
+    }
+}
