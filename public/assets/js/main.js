@@ -20450,7 +20450,29 @@ var App = /*#__PURE__*/function () {
   }
   _createClass(App, [{
     key: "init",
-    value: function init() {}
+    value: function init() {
+      this.scrollToTop();
+    }
+  }, {
+    key: "scrollToTop",
+    value: function scrollToTop() {
+      var btn = document.getElementById("scrollTopBtn");
+      if (!btn) return; // safety
+
+      window.addEventListener("scroll", function () {
+        if (document.documentElement.scrollTop > 100) {
+          btn.style.display = "flex";
+        } else {
+          btn.style.display = "none";
+        }
+      });
+      btn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    }
   }]);
   return App;
 }();

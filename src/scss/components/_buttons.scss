@@ -19,9 +19,10 @@ button,
 
     &:hover {
       background-color: $color-03193f;
-      color: $white;
+      color: $white !important;
     }
   }
+  
   &.bg-FF416C-btn {
     background-color: $color-FF416C;
     color: $white;
@@ -44,8 +45,6 @@ button,
       }
     }
 
-
-
   .header-btn {
     &.bg-03193f-btn {
       a {
@@ -54,9 +53,16 @@ button,
 
       &:hover {
         a {
-          color: $white;
+          color: $white !important;
         }
       }
     }
+  }
+}
+.scrollbtn {
+    &.scroll-outer {
+    background-color: $color-FF416C;
+    color: $white;
+    border: 2px solid $color-FF416C;
   }
 }
