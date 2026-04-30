@@ -9,17 +9,48 @@ button,
 
 .btnA {
     height: 57px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 
     &.bg-03193f-btn {
         background-color: transparent;
         color: $color-03193f;
-        border: 2px solid $color-03193f;
+        border: 1px solid $color-03193f;
 
         &:hover {
             background-color: $color-03193f;
             color: $white;
+        }
+    }
+
+    &.bg-FF416C-btn {
+        background-color: transparent;
+        color: $color-FF416C;
+        border: 1px solid $color-FF416C;
+
+        &:hover {
+            background: linear-gradient(to left, #FF4B2B, #FF416C);
+            color: $white;
+        }
+    }
+
+    &.white-border-btn {
+        background-color: transparent;
+        color: $white;
+        border: 1px solid $white;
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
+
+    &.gradiant-btn {
+        background: linear-gradient(to right, #FF416C, #FF4B2B);
+        color: $white;
+
+        &:hover {
+            background: linear-gradient(to left, #FF416C, #FF4B2B);
         }
     }
 }

@@ -20433,7 +20433,30 @@ var Plugins = /*#__PURE__*/function () {
   }
   plugins_createClass(Plugins, [{
     key: "init",
-    value: function init() {}
+    value: function init() {
+      this.ReviewSlider();
+    }
+  }, {
+    key: "ReviewSlider",
+    value: function ReviewSlider() {
+      $('.review-slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.review-slider-nav'
+      });
+      $('.review-slider-nav').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.review-slider-for',
+        dots: false,
+        arrows: true,
+        focusOnSelect: true,
+        prevArrow: ".review-section .prev-arrow",
+        nextArrow: ".review-section .next-arrow"
+      });
+    }
   }]);
   return Plugins;
 }();
@@ -20659,6 +20682,8 @@ jquery_default()(function () {
   window.privacy.init();
   window.header = new Header();
   window.header.init();
+  window.plugins = new Plugins();
+  window.plugins.init();
 });
 
 // ===========================================================================
