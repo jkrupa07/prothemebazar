@@ -17986,43 +17986,58 @@ button,
   background-color: #fff;
   color: #FF416C;
 }
-.btnA .header-btn.bg-03193f-btn a {
-  color: #03193f;
-  border: 1px solid #03193f;
-}
-.btnA .header-btn.bg-03193f-btn a:hover {
-  background-color: #03193f;
-  color: #fff;
-}
-.btnA .header-btn.bg-03193f-btn.bg-FF416C-btn {
+.btnA.bg-FF416C-btn {
   background-color: transparent;
   color: #FF416C;
   border: 1px solid #FF416C;
 }
-.btnA .header-btn.bg-03193f-btn.bg-FF416C-btn:hover {
+.btnA.bg-FF416C-btn:hover {
   background: linear-gradient(to left, #ff4b2b, #ff416c);
   color: #fff;
 }
-.btnA .header-btn.bg-03193f-btn.white-border-btn {
+.btnA.white-border-btn {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
 }
-.btnA .header-btn.bg-03193f-btn.white-border-btn:hover {
+.btnA.white-border-btn:hover {
   background-color: #fff;
   color: #000;
 }
-.btnA .header-btn.bg-03193f-btn.gradiant-btn {
+.btnA.gradiant-btn {
   background: linear-gradient(to right, #ff416c, #ff4b2b);
   color: #fff;
 }
-.btnA .header-btn.bg-03193f-btn.gradiant-btn:hover {
+.btnA.gradiant-btn:hover {
   background: linear-gradient(to left, #ff416c, #ff4b2b);
 }
-.btnA .header-btn.bg-03193f-btn.scrollbtn .scroll-outer {
+.btnA.scrollbtn .scroll-outer {
   background-color: #FF416C;
   color: #fff;
   border: 2px solid #FF416C;
+}
+
+.btnB {
+  height: 48px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btnB.header-btn-wrapper {
+  color: #03193f;
+  border: 1px solid #FF416C;
+  background-color: transparent;
+}
+.btnB.header-btn-wrapper .header-btn {
+  color: #FF416C;
+}
+.btnB.header-btn-wrapper .header-btn .user-icon {
+  height: 32px;
+}
+.btnB.header-btn-wrapper:hover {
+  background-color: #03193f;
+}
+.btnB.header-btn-wrapper:hover .header-btn {
+  color: #fff;
 }
 
 .card-hover .img {
@@ -18051,7 +18066,7 @@ button,
   z-index: 9999;
 }
 .header .header-logo {
-  height: 100px;
+  width: 115px;
 }
 .header .header-menu li:first-child {
   margin-left: 0px !important;
