@@ -1,0 +1,18 @@
+.slick-arrows-wrapper {
+
+    .prev-arrow,
+    .next-arrow {
+        width: 14px;
+    }
+
+    .prev-arrow {
+        transform: rotate(180deg);
+    }
+
+    .arrow-bg {
+        height: 50px;
+        width: 50px;
+        border: 1px solid $color-FF416C;
+        box-shadow: rgba(99, 99, 99, 0.1) 0px 8px 8px 0px;
+    }
+}

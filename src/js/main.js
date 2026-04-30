@@ -48,6 +48,9 @@ $(function () {
 
   window.header = new Header();
   window.header.init();
+
+  window.plugins = new Plugins();
+  window.plugins.init();
 });
 
 // ===========================================================================

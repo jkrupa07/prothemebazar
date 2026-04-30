@@ -22,7 +22,7 @@ button,
       color: $white !important;
     }
   }
-  
+
   &.bg-FF416C-btn {
     background-color: $color-FF416C;
     color: $white;
@@ -34,35 +34,67 @@ button,
     }
   }
 
-   &.bg-FF416C-border-btn {
-      background-color: transparent;
-      color: $white;
-      border: 2px solid $white;
+  &.bg-FF416C-border-btn {
+    background-color: transparent;
+    color: $white;
+    border: 2px solid $white;
 
-      &:hover {
-        background-color: $white;
-        color: $color-FF416C;
-      }
+    &:hover {
+      background-color: $white;
+      color: $color-FF416C;
     }
+  }
 
   .header-btn {
     &.bg-03193f-btn {
       a {
         color: $color-03193f;
+        border: 1px solid $color-03193f;
+
+        &:hover {
+          background-color: $color-03193f;
+          color: $white;
+        }
       }
 
-      &:hover {
-        a {
-          color: $white !important;
+      &.bg-FF416C-btn {
+        background-color: transparent;
+        color: $color-FF416C;
+        border: 1px solid $color-FF416C;
+
+        &:hover {
+          background: linear-gradient(to left, #ff4b2b, #ff416c);
+          color: $white;
+        }
+      }
+
+      &.white-border-btn {
+        background-color: transparent;
+        color: $white;
+        border: 1px solid $white;
+
+        &:hover {
+          background-color: $white;
+          color: $black;
+        }
+      }
+
+      &.gradiant-btn {
+        background: linear-gradient(to right, #ff416c, #ff4b2b);
+        color: $white;
+
+        &:hover {
+          background: linear-gradient(to left, #ff416c, #ff4b2b);
+        }
+      }
+
+      &.scrollbtn {
+        .scroll-outer {
+          background-color: $color-FF416C;
+          color: $white;
+          border: 2px solid $color-FF416C;
         }
       }
     }
-  }
-}
-.scrollbtn {
-    &.scroll-outer {
-    background-color: $color-FF416C;
-    color: $white;
-    border: 2px solid $color-FF416C;
   }
 }

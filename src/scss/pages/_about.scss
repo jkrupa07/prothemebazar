@@ -1,5 +1,98 @@
-.about-us-section {
+.breadcrumb-banner-section {
+    height: 250px;
+}
+
+.left-right-img-section {
     .about-us-img {
-        height: 450px;
+
+        @include media-breakpoint-up(xl) {
+            height: 510px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: auto;
+        }
+    }
+}
+
+.team-section {
+
+    .team-card {
+        .team-img {
+            height: 325px;
+        }
+
+        .team-content {
+            bottom: -10%;
+            left: 0;
+            transform: translateX(20%);
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .social-media-content {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            opacity: 0;
+            right: -8px;
+            transform: scale(0, 1);
+
+            .social-media-icon {
+                width: 25px;
+            }
+        }
+
+        &:hover {
+
+            .social-media-content {
+                opacity: 1;
+                transform: scale(1, 1);
+            }
+
+            .team-content {
+                transform: translateX(0%);
+            }
+
+        }
+    }
+
+}
+
+.counter-section {
+    .counter-bg {
+        height: 80px;
+        width: 80px;
+
+        .counter-img {
+            width: 38px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            height: 50px;
+            width: 50px;
+
+            .counter-img {
+                width: 25px;
+            }
+        }
+    }
+}
+
+.review-section {
+    .review-slider-for {
+        .client-img {
+            height: 250px;
+        }
+    }
+
+    .review-slider-nav {
+
+        .quote-img {
+            width: 50px;
+        }
+
+        .review-star-group {
+            .review-img {
+                width: 20px;
+            }
+        }
     }
 }
