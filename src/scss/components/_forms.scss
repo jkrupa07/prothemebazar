@@ -5,10 +5,10 @@
     color: $color-666666;
   }
 }
-.textarea{
-    height: 140px;
-    border: 1px solid $color-dddddd;
+.textarea {
+  height: 140px;
+  border: 1px solid $color-dddddd;
   &::placeholder {
-    color: $color-666666;
+    // color: $color-666666;
   }
 }

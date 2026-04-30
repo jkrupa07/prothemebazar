@@ -1,0 +1,23 @@
+.privacy-section {
+  .left-sticky-content {
+    ul {
+      li {
+        a {
+          opacity: 60%;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background-image: url("/public/assets/images/icon/dark-arrow.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 14px;
+            height: 14px;
+            transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
