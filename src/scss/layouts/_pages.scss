@@ -35,3 +35,16 @@
     }
 
 }
+
+.social-media-wrapper {
+
+    .social-bg {
+        background-color: $black ;
+        width: 40px;
+        height: 40px;
+
+        .social-icon {
+            width: 16px;
+        }
+    }
+}

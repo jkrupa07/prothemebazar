@@ -11,7 +11,6 @@ button,
   height: 56px;
   padding-left: 25px;
   padding-right: 25px;
-  transition: 3s ease-in-out;
 
   &.bg-03193f-btn {
     background-color: transparent;
@@ -24,16 +23,16 @@ button,
     }
   }
 
-  &.bg-FF416C-btn {
-    background-color: $color-FF416C;
-    color: $white;
-    border: 2px solid $color-FF416C;
+  // &.bg-FF416C-btn {
+  //   background-color: $color-FF416C;
+  //   color: $white;
+  //   border: 2px solid $color-FF416C;
 
-    &:hover {
-      background-color: $white;
-      color: $color-FF416C;
-    }
-  }
+  //   &:hover {
+  //     background-color: $white;
+  //     color: $color-FF416C;
+  //   }
+  // }
 
   &.bg-FF416C-border-btn {
     background-color: transparent;

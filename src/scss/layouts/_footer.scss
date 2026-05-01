@@ -3,26 +3,11 @@
         height: 120px;
     }
 
-    .social-media {
-        li {
-            background-color: $black ;
-
-            &:first-child {
-                margin-left: 0px !important;
+    .footer-link {
+        a {
+            &:hover {
+                color: $color-FF416C;
             }
-
-            &:last-child {
-                margin-left: 0px !important;
-            }
-        }
-    }
-
-    .social-icon {
-        width: 40px;
-        height: 40px;
-
-        img {
-            height: 15px;
         }
     }
 }

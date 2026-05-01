@@ -2055,43 +2055,6 @@ var popper_lite_createPopper = /*#__PURE__*/popperGenerator({
 
 /***/ }),
 
-/***/ 212:
-/***/ (() => {
-
-// export class Accordion {
-//     init() {
-//         this.Accordion();
-//     }
-//     Accordion() {
-//         $(document).ready(function () {
-//             // Open the first child by default
-//             $('.closet-header').first().addClass('active').next('.closet-content').slideDown();
-
-//             // Handle click events for closet headers
-//             $('.closet-header').click(function () {
-//                 $(this).toggleClass('active').next('.closet-content').slideToggle();
-//                 $('.closet-header').not(this).removeClass('active').next('.closet-content').slideUp();
-//             });
-//         });
-//     }
-// }\
-
-$(document).ready(function () {
-  $(".faq-question").click(function () {
-    var answer = $(this).next(".faq-answer");
-
-    // Close others
-    $(".faq-answer").not(answer).slideUp();
-    $(".faq-question").not(this).removeClass("active");
-
-    // Toggle current
-    $(this).toggleClass("active");
-    answer.slideToggle();
-  });
-});
-
-/***/ }),
-
 /***/ 734:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
@@ -20564,8 +20527,52 @@ var Truncate = /*#__PURE__*/function () {
   }]);
   return Truncate;
 }();
-// EXTERNAL MODULE: ./src/js/parts/accordion.js
-var accordion = __webpack_require__(212);
+;// CONCATENATED MODULE: ./src/js/parts/accordion.js
+function accordion_typeof(obj) { "@babel/helpers - typeof"; return accordion_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, accordion_typeof(obj); }
+function accordion_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function accordion_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, accordion_toPropertyKey(descriptor.key), descriptor); } }
+function accordion_createClass(Constructor, protoProps, staticProps) { if (protoProps) accordion_defineProperties(Constructor.prototype, protoProps); if (staticProps) accordion_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function accordion_toPropertyKey(arg) { var key = accordion_toPrimitive(arg, "string"); return accordion_typeof(key) === "symbol" ? key : String(key); }
+function accordion_toPrimitive(input, hint) { if (accordion_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (accordion_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Accordion = /*#__PURE__*/function () {
+  function Accordion() {
+    accordion_classCallCheck(this, Accordion);
+  }
+  accordion_createClass(Accordion, [{
+    key: "init",
+    value: function init() {
+      this.Accordion();
+    }
+  }, {
+    key: "Accordion",
+    value: function Accordion() {
+      $(document).ready(function () {
+        // Open the first child by default
+        $('.closet-header').first().addClass('active').next('.closet-content').slideDown();
+
+        // Handle click events for closet headers
+        $('.closet-header').click(function () {
+          $(this).toggleClass('active').next('.closet-content').slideToggle();
+          $('.closet-header').not(this).removeClass('active').next('.closet-content').slideUp();
+        });
+      });
+    }
+  }]);
+  return Accordion;
+}();
+$(document).ready(function () {
+  $(".faq-question").click(function () {
+    var answer = $(this).next(".faq-answer");
+
+    // Close others
+    $(".faq-answer").not(answer).slideUp();
+    $(".faq-question").not(this).removeClass("active");
+
+    // Toggle current
+    $(this).toggleClass("active");
+    answer.slideToggle();
+  });
+});
 ;// CONCATENATED MODULE: ./src/js/parts/privacy.js
 function privacy_typeof(obj) { "@babel/helpers - typeof"; return privacy_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, privacy_typeof(obj); }
 function privacy_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20619,28 +20626,29 @@ var Header = /*#__PURE__*/function () {
   header_createClass(Header, [{
     key: "init",
     value: function init() {
-      this.HeaderHover();
+      this.MenuToggle();
       this.HeaderFixed();
     }
   }, {
-    key: "HeaderHover",
-    value: function HeaderHover() {
-      $(document).ready(function () {
-        function HeaderDeskResize() {
-          var HeaderResize = $(window).width();
-          if (HeaderResize >= 1024) {
-            $(".header-link").off("mouseenter mouseleave").hover(function () {
-              $(".header-link").addClass("hover-active");
-              $(".header-main").addClass("header-active");
-              $("html").addClass("overflow-hidden");
-            }, function () {
-              $(".header-link").removeClass("hover-active");
-              $(".header-main").removeClass("header-active");
-              $("html").removeClass("overflow-hidden");
-            });
-          }
+    key: "MenuToggle",
+    value: function MenuToggle() {
+      $(".menu-toggle").click(function (e) {
+        e.preventDefault();
+        console.log("....");
+        if (!$(".menu-toggle").hasClass("activate")) {
+          // Open menu
+          $(".header").addClass("res-header-active");
+          $(".menu-toggle").addClass("activate");
+          $(".navigation").removeClass("d-none");
+          $("html").addClass("overflow-hidden");
+        } else {
+          // Close menu
+          $(".menu-toggle").removeClass("activate");
+          $(".navigation").addClass("d-none");
+          $(".header").removeClass("res-header-active");
+          $("html").removeClass("overflow-hidden");
         }
-        HeaderDeskResize();
+        $(".mega-link").removeClass("res-menu-active");
       });
     }
   }, {
@@ -20704,7 +20712,7 @@ jquery_default()(function () {
   window.parts.init();
   window.truncate = new Truncate();
   window.truncate.init();
-  window.accordion = new accordion.Accordion();
+  window.accordion = new Accordion();
   window.accordion.init();
   window.privacy = new Privacy();
   window.privacy.init();

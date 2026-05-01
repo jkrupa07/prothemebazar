@@ -1,30 +1,30 @@
 export class Header {
     init() {
-        this.HeaderHover();
+        this.MenuToggle();
         this.HeaderFixed();
     }
 
-    HeaderHover() {
-        $(document).ready(function () {
-            function HeaderDeskResize() {
-                let HeaderResize = $(window).width();
-                if (HeaderResize >= 1024) {
-                    $(".header-link").off("mouseenter mouseleave").hover(
-                        function () {
-                            $(".header-link").addClass("hover-active");
-                            $(".header-main").addClass("header-active");
-                            $("html").addClass("overflow-hidden")
-                        },
-                        function () {
-                            $(".header-link").removeClass("hover-active");
-                            $(".header-main").removeClass("header-active");
-                            $("html").removeClass("overflow-hidden")
-                        }
-                    )
-                }
+    MenuToggle() {
+        $(".menu-toggle").click(function (e) {
+            e.preventDefault();
+
+            console.log("....");
+
+            if (!$(".menu-toggle").hasClass("activate")) {
+                // Open menu
+                $(".header").addClass("res-header-active");
+                $(".menu-toggle").addClass("activate");
+                $(".navigation").removeClass("d-none");
+                $("html").addClass("overflow-hidden");
+            } else {
+                // Close menu
+                $(".menu-toggle").removeClass("activate");
+                $(".navigation").addClass("d-none");
+                $(".header").removeClass("res-header-active");
+                $("html").removeClass("overflow-hidden");
             }
-            HeaderDeskResize();
-        })
+            $(".mega-link").removeClass("res-menu-active");
+        });
     }
 
     HeaderFixed() {

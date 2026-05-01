@@ -1,23 +1,104 @@
 .header {
     z-index: 9999;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     .header-logo {
         width: 115px;
+
+        @include media-breakpoint-down(lg) {
+            width: 90px;
+        }
     }
 
-    .header-menu li:first-child {
-        margin-left: 0px !important;
+    .cart-content {
+        .cart-icon {
+            height: 20px !important;
+        }
     }
 
-    .header-menu li:last-child {
-        margin-right: 0px !important;
+    .navigation {
+        .header-link {
+
+            &:hover {
+                a {
+                    color: $color-FF416C !important;
+                }
+
+                .mega-menu {
+
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
     }
 
-    .cart-icon {
-        height: 20px !important;
+    .mega-menu {
+        opacity: 0;
+        visibility: hidden;
     }
 
     .user-icon {
         height: 30px !important;
+    }
+
+    @include media-breakpoint-down(lg) {
+        .navigation {
+            display: none !important;
+        }
+
+        .menu-toggle {
+
+            .burger-menu {
+                width: 32px;
+            }
+
+            .close-btn {
+                width: 20px;
+            }
+
+            &.activate {
+                .burger-menu {
+                    display: none !important;
+                }
+
+                .close-btn {
+                    display: flex !important;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    &.res-header-active {
+        height: 100vh;
+        background-color: $color-333333;
+
+        .navigation {
+            display: block !important;
+            position: absolute;
+            top: 50%;
+            left: 22px;
+            transform: translate(0%, -50%);
+            padding-block: 100px;
+            overflow-y: auto;
+
+            ul {
+                li {
+                    a {
+                        color: $white !important;
+                    }
+                }
+            }
+
+            .header-menu {
+                display: block !important;
+            }
+
+        }
+    }
+
+    &.header-fixed {
+        background-color: $white;
     }
 }
