@@ -17993,33 +17993,6 @@ button,
   background-color: #03193f;
   color: #fff !important;
 }
-.btnA.bg-FF416C-border-btn {
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-}
-.btnA.bg-FF416C-border-btn:hover {
-  background-color: #fff;
-  color: #FF416C;
-}
-.btnA.bg-white-border-btn {
-  background-color: #FF416C;
-  color: #fff;
-  border: 2px solid #FF416C;
-}
-.btnA.bg-white-border-btn:hover {
-  background-color: #fff !important;
-  color: #FF416C !important;
-}
-.btnA.bg-FF416C-btn {
-  background-color: transparent;
-  color: #FF416C;
-  border: 1px solid #FF416C;
-}
-.btnA.bg-FF416C-btn:hover {
-  background: linear-gradient(to left, #ff4b2b, #ff416c);
-  color: #fff;
-}
 .btnA.white-border-btn {
   background-color: transparent;
   color: #fff;
@@ -18392,6 +18365,10 @@ input.search-input {
   border-top: 1px solid #eeeeee;
 }
 
+.contact-us-section .map-content {
+  height: 630px;
+}
+
 .contact-cards .contact-card {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
@@ -18447,6 +18424,22 @@ input.search-input {
 .blog-open-section ul li::marker {
   color: #808080;
   font-size: 14px;
+}
+
+.privacy-section .left-sticky-content ul li a {
+  opacity: 60%;
+}
+.privacy-section .left-sticky-content ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-image: url("/public/assets/images/icon/dark-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 14px;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=main.css.map */

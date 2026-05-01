@@ -34,39 +34,6 @@ button,
   //   }
   // }
 
-  &.bg-FF416C-border-btn {
-    background-color: transparent;
-    color: $white;
-    border: 2px solid $white;
-
-    &:hover {
-      background-color: $white;
-      color: $color-FF416C;
-    }
-  }
-
-  &.bg-white-border-btn {
-    background-color: $color-FF416C;
-    color: $white;
-    border: 2px solid $color-FF416C;
-
-    &:hover {
-      background-color: $white !important;
-      color:  $color-FF416C !important;
-    }
-  }
-
-  &.bg-FF416C-btn {
-    background-color: transparent;
-    color: $color-FF416C;
-    border: 1px solid $color-FF416C;
-
-    &:hover {
-      background: linear-gradient(to left, #ff4b2b, #ff416c);
-      color: $white;
-    }
-  }
-
   &.white-border-btn {
     background-color: transparent;
     color: $white;

@@ -1,17 +1,24 @@
-.contact-cards {
-    .contact-card{
-           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+.contact-us-section {
+  .map-content {
+    height: 630px;
+  }
+}
 
-    }
+.contact-cards {
+  .contact-card {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  }
   .contact-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, rgba(255, 65, 108, 1), rgba(255, 61, 46, 1)) !important;
-     
+    background: linear-gradient(
+      135deg,
+      rgba(255, 65, 108, 1),
+      rgba(255, 61, 46, 1)
+    ) !important;
+
     .contact-img {
       height: 30px;
     }
   }
-
-
 }
