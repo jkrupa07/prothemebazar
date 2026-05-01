@@ -14462,6 +14462,10 @@ progress {
   font-family: "rubik-light";
   src: url("../../../public/assets/fonts/rubik-light.ttf") format(truetype);
 }
+@font-face {
+  font-family: "rubik-semibold";
+  src: url("../../../public/assets/fonts/rubik-semibold.ttf") format(truetype);
+}
 .rubik {
   font-family: "rubik-regular";
 }
@@ -14480,6 +14484,10 @@ progress {
 
 .rubik-light {
   font-family: "rubik-light";
+}
+
+.rubik-semibold {
+  font-family: "rubik-semibold";
 }
 
 /*******************************************************************************
@@ -17975,6 +17983,7 @@ button,
   height: 56px;
   padding-left: 25px;
   padding-right: 25px;
+  transition: 3s ease-in-out;
 }
 .btnA.bg-03193f-btn {
   background-color: transparent;
@@ -18002,6 +18011,15 @@ button,
 .btnA.bg-FF416C-border-btn:hover {
   background-color: #fff;
   color: #FF416C;
+}
+.btnA.bg-white-border-btn {
+  background-color: #FF416C;
+  color: #fff;
+  border: 2px solid #FF416C;
+}
+.btnA.bg-white-border-btn:hover {
+  background-color: #fff !important;
+  color: #FF416C !important;
 }
 .btnA.bg-FF416C-btn {
   background-color: transparent;
@@ -18041,7 +18059,7 @@ button,
 }
 .btnB.header-btn-wrapper {
   color: #03193f;
-  border: 1px solid #FF416C;
+  border: 2px solid #FF416C;
   background-color: transparent;
 }
 .btnB.header-btn-wrapper .header-btn {
@@ -18051,7 +18069,7 @@ button,
   height: 32px;
 }
 .btnB.header-btn-wrapper:hover {
-  background-color: #03193f;
+  background-color: #FF416C;
 }
 .btnB.header-btn-wrapper:hover .header-btn {
   color: #fff;
@@ -18064,6 +18082,22 @@ button,
 .btnC.tag-FF416C-btn:hover {
   background-color: #FF416C;
   color: #fff;
+}
+
+.input {
+  height: 55px;
+  border: 1px solid #dddddd;
+}
+.input::placeholder {
+  color: #666666;
+}
+
+.textarea {
+  height: 140px;
+  border: 1px solid #dddddd;
+}
+.textarea::placeholder {
+  color: #666666;
 }
 
 .card-hover .img {

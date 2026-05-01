@@ -33,6 +33,12 @@
 
 }
 
+@font-face {
+    font-family: "rubik-semibold";
+    src: url("../../../public/assets/fonts/rubik-semibold.ttf") format(truetype);
+
+}
+
 .rubik {
     font-family: "rubik-regular";
 }
@@ -51,4 +57,7 @@
 
 .rubik-light {
     font-family: "rubik-light";
+}
+.rubik-semibold {
+    font-family: "rubik-semibold";
 }
