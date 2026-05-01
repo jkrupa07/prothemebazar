@@ -98,7 +98,7 @@ button,
     .header-btn {
       color: $color-FF416C;
 
-      .user-icon{
+      .user-icon {
         height: 32px;
       }
     }
@@ -109,6 +109,18 @@ button,
       .header-btn {
         color: $white;
       }
+    }
+  }
+}
+
+.btnC {
+  &.tag-FF416C-btn {
+    background-color: transparent;
+    color: $color-FF416C;
+
+    &:hover{
+      background-color: $color-FF416C;
+      color: $white;
     }
   }
 }

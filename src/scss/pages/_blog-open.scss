@@ -1,0 +1,42 @@
+.blog-open-section {
+    blockquote {
+        padding-left: 40px;
+        font-family: "rubik-regular";
+        font-size: $font16;
+        color: $color-808080;
+
+        .italic {}
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: $color-FF416C;
+        }
+    }
+
+    .img-gallery-wrapper {
+        .gallery-img {
+            height: 225px;
+        }
+    }
+
+    ul {
+        padding-left: 20px;
+
+        li {
+            font-family: "rubik-regular";
+            color: $color-808080;
+            font-size: $font16;
+
+            &::marker {
+                color: $color-808080;
+                font-size: 14px;
+            }
+
+        }
+    }
+}

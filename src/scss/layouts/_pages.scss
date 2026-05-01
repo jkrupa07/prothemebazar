@@ -1,7 +1,37 @@
+.border-FF416C {
+    border: 1px solid $color-FF416C;
+}
+
 .gradient-label {
     background: linear-gradient(to right, #FF416C, #FF4B2B);
 
     &.radius-corner {
         border-top-right-radius: 30px;
     }
+}
+
+.recent-sticky-content {
+    .recent-post-img {
+        height: 75px;
+    }
+
+    &.horizontal-content {
+
+        .recent-title {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .recent-post-img {
+            height: 115px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        .recent-content {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+    }
+
 }
