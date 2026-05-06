@@ -17993,6 +17993,15 @@ button,
   background-color: #03193f;
   color: #fff !important;
 }
+.btnA.bg-FF416C-btn {
+  background-color: #FF416C;
+  color: #fff;
+  border: 2px solid #FF416C;
+}
+.btnA.bg-FF416C-btn:hover {
+  background-color: #fff;
+  color: #FF416C;
+}
 .btnA.white-border-btn {
   background-color: transparent;
   color: #fff;
@@ -18426,20 +18435,40 @@ input.search-input {
   font-size: 14px;
 }
 
-.privacy-section .left-sticky-content ul li a {
+.privacy-section .left-sticky-content {
+  top: 100px;
+}
+.privacy-section .left-sticky-content .left-content ul li a {
   opacity: 60%;
 }
-.privacy-section .left-sticky-content ul li::before {
+.privacy-section .left-sticky-content .left-content ul li::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 13px;
+  left: 2px;
   background-image: url("/public/assets/images/icon/dark-arrow.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   transform: translate(-50%, -50%);
+  opacity: 0;
+}
+@media (max-width: 991.98px) {
+  .privacy-section .left-sticky-content .left-content ul li::before {
+    left: 2px;
+    width: 10px;
+    height: 10px;
+  }
+}
+.privacy-section .left-sticky-content .left-content ul li.active {
+  padding-left: 10px;
+}
+.privacy-section .left-sticky-content .left-content ul li.active::before {
+  opacity: 1;
+}
+.privacy-section .single-content:first-child {
+  padding-top: 0 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

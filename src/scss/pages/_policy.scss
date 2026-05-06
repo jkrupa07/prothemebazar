@@ -1,23 +1,51 @@
 .privacy-section {
   .left-sticky-content {
-    ul {
-      li {
-        a {
-          opacity: 60%;
-        }
-        &::before{
+    top: 100px;
+
+    .left-content {
+      ul {
+        li {
+          a {
+            opacity: 60%;
+          }
+
+          &::before {
             content: '';
             position: absolute;
-            top: 50%;
-            left: 0;
+            top: 13px;
+            left: 2px;
+
             background-image: url("/public/assets/images/icon/dark-arrow.svg");
             background-repeat: no-repeat;
             background-size: cover;
-            width: 14px;
-            height: 14px;
+            width: 12px;
+            height: 12px;
             transform: translate(-50%, -50%);
+            opacity: 0;
+
+            @include media-breakpoint-down(lg) {
+              left: 2px;
+              width: 10px;
+              height: 10px;
+            }
+          }
+
+          &.active {
+            padding-left: 10px;
+
+            &::before {
+              opacity: 1;
+            }
+
+          }
         }
       }
+    }
+  }
+
+  .single-content {
+    &:first-child {
+      padding-top: 0 !important;
     }
   }
 }

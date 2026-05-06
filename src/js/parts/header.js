@@ -8,8 +8,6 @@ export class Header {
         $(".menu-toggle").click(function (e) {
             e.preventDefault();
 
-            console.log("....");
-
             if (!$(".menu-toggle").hasClass("activate")) {
                 // Open menu
                 $(".header").addClass("res-header-active");

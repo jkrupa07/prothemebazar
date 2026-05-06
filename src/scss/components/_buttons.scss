@@ -23,16 +23,16 @@ button,
     }
   }
 
-  // &.bg-FF416C-btn {
-  //   background-color: $color-FF416C;
-  //   color: $white;
-  //   border: 2px solid $color-FF416C;
+  &.bg-FF416C-btn {
+    background-color: $color-FF416C;
+    color: $white;
+    border: 2px solid $color-FF416C;
 
-  //   &:hover {
-  //     background-color: $white;
-  //     color: $color-FF416C;
-  //   }
-  // }
+    &:hover {
+      background-color: $white;
+      color: $color-FF416C;
+    }
+  }
 
   &.white-border-btn {
     background-color: transparent;
